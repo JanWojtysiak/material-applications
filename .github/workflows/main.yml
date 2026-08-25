@@ -11,6 +11,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v7
+      context: ./express-app
     - name: Set up docker buildx
       uses: docker/setup-buildx-action@v4
     - name: Log in to Docker Hub
